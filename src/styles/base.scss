@@ -1,0 +1,56 @@
+@import 'vars.scss';
+@import 'fonts.scss';
+@import 'normalize.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+button {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+button:focus, button:active {
+    outline: none;
+}
+
+body {
+    background-color: $grey-color;
+}
+
+#root {
+    background-color: $bg-color;
+    font-family: $main-font;
+    color: $accent-color;
+}
