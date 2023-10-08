@@ -3,9 +3,11 @@ import './styles/base.scss'
 function App() {
 
   return (
-      <>
-        <h1>events calendar</h1>
-      </>
+    <>
+        <div className="container">
+            <h1>events calendar</h1>
+        </div>
+    </>
   );
 }
 
