@@ -1,7 +1,6 @@
 import './styles/base.scss'
 
 import Header from './components/Header/Header';
-import Monitor from './components/Monitor/Monitor';
 import CalendarGrid from './components/CalendarGrid/CalendarGrid';
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
         <div className="container">
           
           <Header />
-          <Monitor />
+          
           <CalendarGrid />
             
         </div>

@@ -41,7 +41,7 @@ button {
     cursor: pointer;
 }
 
-button:focus, button:active {
+button, button:focus, button:active {
     outline: none;
 }
 
@@ -67,8 +67,4 @@ body {
     padding: 30px 60px 53px;
 
     border: 1px solid green;
-}
-
-h1 {
-    border: 1px solid blue;
 }
