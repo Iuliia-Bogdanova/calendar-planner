@@ -1,4 +1,6 @@
-import './styles/base.scss'
+import './styles/base.scss';
+
+import moment from 'moment';
 
 import Header from './components/Header/Header';
 import CalendarGrid from './components/CalendarGrid/CalendarGrid';
