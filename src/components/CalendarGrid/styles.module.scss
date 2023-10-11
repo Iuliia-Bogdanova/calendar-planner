@@ -26,6 +26,7 @@
     line-height: 1.4;
     letter-spacing: -0.4px;
     color: $text-color;
+    text-transform: lowercase;
 
     @media (max-width: 1600px) {
         padding-bottom: 12px;
