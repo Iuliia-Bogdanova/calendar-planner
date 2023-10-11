@@ -19,7 +19,7 @@ function Header() {
                 </h2>
             </div>
             <div className={st.monitor}>
-                <p className={st.month}>Сентябрь</p>
+                <p className={st.month}>Октябрь</p>
                 <button className={st.leftArrow}>
                     <img src={leftArrow} />
                 </button>
