@@ -46,6 +46,14 @@ button, button:focus, button:active {
     outline: none;
 }
 
+#root {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 body {
     // background-color: $grey-color;
     // overflow: hidden;

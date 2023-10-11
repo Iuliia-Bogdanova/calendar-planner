@@ -1,0 +1,46 @@
+@import '../../../styles/vars.scss';
+
+.subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 678px;
+    height: 77px;
+    text-transform: lowercase;
+}
+
+.logotype {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.logo {
+    width: 53px;
+    height: 31px;
+}
+
+.title {
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: -0.52px;
+    color: $text-color;
+
+    @media (max-width: 1600px) {
+        font-size: 24px;
+    }
+}
+
+.h2 {
+    font-size: 64px;
+    line-height: 1.2;
+    letter-spacing: -2.56px;
+
+    @media (max-width: 1600px) {
+        font-size: 60px;
+    }
+}
+
+.active {
+    color: $accent-color;
+}

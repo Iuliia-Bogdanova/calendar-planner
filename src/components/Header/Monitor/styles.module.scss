@@ -1,0 +1,37 @@
+@import '../../../styles/vars.scss';
+
+.monitor {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease;
+}
+
+.month {
+    padding: 8px 24px;
+    font-size: 26px;
+    line-height: 1.2; 
+    letter-spacing: -0.52px;
+
+    @media (max-width: 1600px) {
+        font-size: 24px;
+    }
+}
+
+.leftArrow,
+.rightArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: $element-color;
+}
+
+.leftArrow:hover,
+.rightArrow:hover {
+    transform: scale(0.95);
+    opacity: 0.9;
+}

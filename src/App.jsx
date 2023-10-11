@@ -1,5 +1,6 @@
 import './styles/base.scss';
 
+import React from 'react';
 import moment from 'moment';
 import "moment/locale/ru";
 
@@ -17,8 +18,11 @@ function App() {
     return (
         <div className="App">
             <div className="container">
+                
                 <Header />
+                
                 <CalendarGrid startDay={startDay} />
+                
             </div>
         </div>
     );
