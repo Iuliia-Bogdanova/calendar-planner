@@ -1,0 +1,23 @@
+@import '../../../styles/vars.scss';
+
+.daysWrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    // margin-top: 88px;
+
+    border: 1px solid green;
+}
+
+.days {
+    margin-left: auto;
+    // padding: 104px 4px 16px;
+    padding: 16px 4px;
+
+    font: $main-font;
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    color: $text-color;
+    text-transform: capitalize;
+
+    // border: 1px solid grey;
+}

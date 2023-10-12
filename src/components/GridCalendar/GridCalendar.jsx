@@ -3,7 +3,9 @@ import moment from "moment";
 import "moment/locale/ru";
 
 // import st from './styles.module.scss';
+
 import Calendar from './Calendar/Calendar';
+import WeekDays from './WeekDays/WeekDays';
 
 moment.locale("ru");
 
@@ -15,19 +17,12 @@ const GridCalendar = ({ startDay }) => {
     console.log(daysArray);
 
     return (
-        <Calendar startDay={startDay} />
+        <div>
+            <WeekDays />
 
-        // <div className={st.cellsWrapper}>
-        //     {daysArray.map((dayItem) => (
-        //         <div className={st.cells} key={dayItem.format("DDMMYYY")}>
-        //             {dayItem.date() === 1
-        //                 ? dayItem.format("D MMM.")
-        //                 : dayItem.format("D")}
-        //             <p className={st.event}>event1</p>
-        //             <p className={st.event}>event2</p>
-        //         </div>
-        //     ))}
-        // </div>
+            <Calendar startDay={startDay} />
+        
+        </div>
     );
 };
 
