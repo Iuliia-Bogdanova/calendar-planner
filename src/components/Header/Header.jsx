@@ -15,15 +15,18 @@ const today = moment();
 
 function Header() {
     return (
-        <div className={st.wrapper}>
-
-            <Title />
-            
-            <Monitor today = {today} />
-
-            <InactiveUser />
-            
-        </div>
+        <ul className={st.wrapper}>
+            <li>
+                <Title />
+            </li>
+            <li></li>
+            <li>
+                <Monitor today={today} />
+            </li>
+            <li>
+                <InactiveUser />
+            </li>
+        </ul>
     );
 }
 

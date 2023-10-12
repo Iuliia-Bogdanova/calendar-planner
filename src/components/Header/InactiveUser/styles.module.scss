@@ -1,6 +1,8 @@
 @import '../../../styles/vars.scss';
 
 .inactiveLogin {
+    // display: none;
+    text-align: right;
     transition: transform 0.3s ease;
 }
 

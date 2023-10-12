@@ -1,8 +1,9 @@
 @import '../../styles/vars.scss';
 
 .wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr 1fr;
+    justify-content: end;
     align-items: center;
     font-family: $main-font;
     margin-bottom: 104px;
