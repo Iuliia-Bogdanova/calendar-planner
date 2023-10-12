@@ -3,10 +3,17 @@
 .wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr 2fr 1fr;
-    justify-content: end;
-    align-items: center;
+    max-height: 77px;
     font-family: $main-font;
     margin-bottom: 104px;
+
+    @media (max-width: 1600px) {
+        margin-bottom: 90px;
+    }
+
+    @media (max-width: 1420px) {
+        margin-bottom: 70px;
+    }
 
     border: 1px solid orange;
 }

@@ -3,6 +3,7 @@
 .inactiveLogin {
     // display: none;
     text-align: right;
+    padding-top: 14px;
     transition: transform 0.3s ease;
 }
 
@@ -15,8 +16,14 @@
     font-size: 18px;
     letter-spacing: -0.36px;
 
-    @media (max-width: 1600px) {
-        height: 58px;
+    @media (max-width: 1530px) {
+        width: 120px;
+        height: 56px;
+    }
+
+    @media (max-width: 1420px) {
+        width: 116px;
+        height: 52px;
     }
 }
 

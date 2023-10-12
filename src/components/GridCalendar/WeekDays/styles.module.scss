@@ -3,21 +3,27 @@
 .daysWrapper {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    // margin-top: 88px;
 
-    border: 1px solid green;
+    // border: 1px solid green;
 }
 
 .days {
     margin-left: auto;
-    // padding: 104px 4px 16px;
     padding: 16px 4px;
 
-    font: $main-font;
+    font-family: $main-font;
     font-size: 24px;
     letter-spacing: -0.48px;
     color: $text-color;
     text-transform: capitalize;
+
+    @media (max-width: 1530px) {
+        font-size: 22px;
+    }
+
+    @media (max-width: 1360px) {
+        font-size: 20px;
+    }
 
     // border: 1px solid grey;
 }
