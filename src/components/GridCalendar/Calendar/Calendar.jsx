@@ -13,17 +13,17 @@ const Calendar = ({ startDay }) => {
     console.log(daysArray);
 
     return (
-        <ul className={st.cellsWrapper}>
+        <div className={st.cellsWrapper}>
             {daysArray.map((dayItem) => (
-                <li className={st.cells} key={dayItem.format("DDMMYYY")}>
+                <div className={st.cells} key={dayItem.format("DDMMYYY")}>
                     {dayItem.date() === 1
                         ? dayItem.format("D MMM.")
                         : dayItem.format("D")}
-                    <li className={st.event}>event1</li>
-                    <li className={st.event}>event2</li>
-                </li>
+                    <p className={st.event}>event1</p>
+                    <p className={st.event}>event2</p>
+                </div>
             ))}
-        </ul>
+        </div>
     );
 };
 

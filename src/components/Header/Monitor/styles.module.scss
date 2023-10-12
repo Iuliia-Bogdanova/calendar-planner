@@ -3,11 +3,16 @@
 .monitor {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
-    margin-top: auto;
-    padding-top: 28px;
+    align-items: center;
+    // text-align: right;
+    // margin-top: auto;
+    padding-top: 24px;
     gap: 8px;
     transition: transform 0.3s ease;
+
+    @media (max-width: 1420px) {
+        padding-top: 30px;
+    }
 }
 
 .month {
@@ -31,20 +36,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48px;
-    height: 40px;
+    width: 64px;
+    height: 48px;
     border: none;
     border-radius: 8px;
     background-color: $element-color;
 
     @media (max-width: 1530px) {
-        width: 44px;
-        height: 36px;
+        width: 58px;
+        height: 44px;
     }
 
     @media (max-width: 1420px) {
-        width: 42px;
-        height: 34px;
+        width: 52px;
+        height: 40px;
     }
 }
 
