@@ -1,19 +1,22 @@
-import './styles/base.scss';
-
 import React from 'react';
-import moment from 'moment';
+import moment from "moment";
 import "moment/locale/ru";
 
+import "./styles/base.scss";
+
+import Header from './components/Header/Header';
+import GridCalendar from './components/GridCalendar/GridCalendar';
+
+import "moment/locale/ru";
 moment.locale("ru");
 console.log(moment.locale());
 
-import Header from './components/Header/Header';
-import CalendarGrid from './components/CalendarGrid/CalendarGrid';
-
 function App() {
         moment.updateLocale('ru', {week:{dow: 1}});
-        
-        const startDay = moment().startOf('month').startOf('week').day(1);
+        const today = moment();
+        const startDay = today.startOf('month').startOf('week').day(1);
+
+        // window.moment = moment;
 
     return (
         <div className="App">
@@ -21,7 +24,7 @@ function App() {
                 
                 <Header />
                 
-                <CalendarGrid startDay={startDay} />
+                <GridCalendar startDay={startDay} />
                 
             </div>
         </div>

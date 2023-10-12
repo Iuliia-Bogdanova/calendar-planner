@@ -5,10 +5,10 @@ import leftArrow from "/left-arrow.svg";
 import rightArrow from "/right-arrow.svg";
 
 
-function Monitor() {
+function Monitor({today}) {
     return (
         <div className={st.monitor}>
-            <p className={st.month}>Октябрь</p>
+            <p className={st.month}>{today.format('MMMM')}</p>
             <button className={st.leftArrow}>
                 <img src={leftArrow} />
             </button>

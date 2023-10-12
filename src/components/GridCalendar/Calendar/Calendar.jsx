@@ -1,11 +1,12 @@
 import React from 'react';
-// import moment from "moment";
-// import "moment/locale/ru";
-// moment.locale("ru");
+import moment from "moment";
+import "moment/locale/ru";
 
 import st from './styles.module.scss';
 
-const CalendarGrid = ({ startDay }) => {
+moment.locale("ru");
+
+const Calendar = ({ startDay }) => {
     const totalDays = 42;
     const day = startDay.clone().subtract(1, "day");
     const daysArray = [...Array(42)].map(() => day.add(1, "day").clone());
@@ -26,4 +27,4 @@ const CalendarGrid = ({ startDay }) => {
     );
 };
 
-export default CalendarGrid;
+export default Calendar;
