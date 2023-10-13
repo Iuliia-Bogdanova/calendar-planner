@@ -61,16 +61,16 @@
 
 .avatar {
     display: inline-flex;
-    width: 76px;
-    height: 76px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     background-color: $element-color;
 
     @media (max-width: 1360px) {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -79,8 +79,8 @@
     height: 68px;
 
     @media (max-width: 1360px) {
-        width: 64px;
-        height: 64px;
+        width: 56px;
+        height: 56px;
     }
 }
 

@@ -4,14 +4,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    // text-align: right;
-    // margin-top: auto;
     padding-top: 24px;
     gap: 8px;
     transition: transform 0.3s ease;
 
     @media (max-width: 1420px) {
-        padding-top: 30px;
+        padding-top: 20px;
     }
 }
 
