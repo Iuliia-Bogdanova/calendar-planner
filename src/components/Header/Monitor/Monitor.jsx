@@ -5,14 +5,31 @@ import st from "./styles.module.scss";
 import leftArrow from "/left-arrow.svg";
 import rightArrow from "/right-arrow.svg";
 
+const russianMonths = [
+    "январь",
+    "февраль",
+    "март",
+    "апрель",
+    "май",
+    "июнь",
+    "июль",
+    "август",
+    "сентябрь",
+    "октябрь",
+    "ноябрь",
+    "декабрь",
+];
+
 function Monitor({ currentMonth, changeMonth }) {
+    
     const today = moment();
+    const monthName = russianMonths[currentMonth.month()];
     return (
         <div className={st.monitor}>
             <p className={st.month}>
                 {currentMonth.year() === today.year()
-                    ? currentMonth.format("MMMM")
-                    : currentMonth.format("MMMM YYYY")}
+                    ? monthName
+                    : `${monthName} ${currentMonth.year()}`}
             </p>
             <button className={st.leftArrow} onClick={() => changeMonth(-1)}>
                 <img src={leftArrow} />

@@ -8,11 +8,6 @@ import ActiveUser from "./ActiveUser/ActiveUser";
 
 import st from './styles.module.scss';
 
-import "moment/locale/ru";
-
-moment.locale("ru");
-console.log(moment.locale());
-
 const today = moment();
 
 function Header({ currentMonth, changeMonth }) {

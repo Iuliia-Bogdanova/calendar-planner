@@ -1,18 +1,28 @@
 import React from "react";
 import moment from "moment";
-import "moment/locale/ru";
 
 import st from "./styles.module.scss";
 
-moment.locale("ru");
+const russianShortMonths = [
+    "янв",
+    "фев",
+    "мар",
+    "апр",
+    "мая",
+    "июн",
+    "июл",
+    "авг",
+    "сен",
+    "окт",
+    "ноя",
+    "дек",
+];
 
 const Calendar = ({ startDay }) => {
     const totalDays = 42;
     const day = startDay.clone().subtract(1, "day");
     const daysArray = [...Array(totalDays)].map(() => day.add(1, "day").clone());
     
-    console.log(daysArray);
-
     const isPastEvent = (eventDate) => {
         const currentDay = moment();
         return eventDate.isBefore(currentDay);
@@ -22,9 +32,15 @@ const Calendar = ({ startDay }) => {
         <div className={st.cellsWrapper}>
             {daysArray.map((dayItem) => (
                 <div className={st.cells} key={dayItem.format("DDMMYYY")}>
-                    <span style={{ opacity: dayItem.isSame(moment(), "month") ? 1 : 0.5 }}>
+                    <span
+                        style={{
+                            opacity: dayItem.isSame(moment(), "month")
+                                ? 1
+                                : 0.5,
+                        }}
+                    >
                         {dayItem.date() === 1
-                            ? dayItem.format("D MMM.")
+                            ? `${dayItem.date()} ${russianShortMonths[dayItem.month()]}${dayItem.month() === 4 ? '' : '.'}`
                             : dayItem.format("D")}
                     </span>
                     <p
