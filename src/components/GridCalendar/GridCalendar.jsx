@@ -1,15 +1,15 @@
 import React from "react";
-import moment from "moment";
-import "moment/locale/ru";
+// import moment from "moment";
+// import "moment/locale/ru";
 
 // import st from './styles.module.scss';
 
 import Calendar from "./Calendar/Calendar";
 import WeekDays from "./WeekDays/WeekDays";
 
-moment.locale("ru");
+// moment.locale("ru");
 
-console.log(moment.locales());
+// console.log(moment.locales());
 
 const GridCalendar = ({ startDay }) => {
     const totalDays = 42;

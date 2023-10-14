@@ -4,7 +4,6 @@ import st from './styles.module.scss';
 
 function WeekDays() {
     return (
-        // <div className={st.daysWrapper}>
         <ul className={st.daysWrapper}>
             <li className={st.days}>пн</li>
             <li className={st.days}>вт</li>
@@ -14,7 +13,6 @@ function WeekDays() {
             <li className={st.days}>сб</li>
             <li className={st.days}>вс</li>
         </ul>
-        // </div>
     );
 }
 

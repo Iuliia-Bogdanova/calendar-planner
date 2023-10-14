@@ -7,7 +7,6 @@ import "./styles/base.scss";
 import Header from "./components/Header/Header";
 import GridCalendar from "./components/GridCalendar/GridCalendar";
 
-import "moment/locale/ru";
 moment.locale("ru");
 console.log(moment.locale());
 
