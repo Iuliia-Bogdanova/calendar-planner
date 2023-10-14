@@ -15,7 +15,7 @@ console.log(moment.locale());
 
 const today = moment();
 
-function Header() {
+function Header({ currentMonth, changeMonth }) {
     return (
         <ul className={st.wrapper}>
             <li>
@@ -23,11 +23,14 @@ function Header() {
             </li>
             <li></li>
             <li>
-                <Monitor today={today} />
+                <Monitor
+                    currentMonth={currentMonth}
+                    changeMonth={changeMonth}
+                />
             </li>
             <li>
-                {/* <InactiveUser /> */}
-                <ActiveUser />
+                <InactiveUser />
+                {/* <ActiveUser /> */}
             </li>
         </ul>
     );
