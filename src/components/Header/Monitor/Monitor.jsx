@@ -5,20 +5,7 @@ import st from "./styles.module.scss";
 import leftArrow from "/left-arrow.svg";
 import rightArrow from "/right-arrow.svg";
 
-const russianMonths = [
-    "январь",
-    "февраль",
-    "март",
-    "апрель",
-    "май",
-    "июнь",
-    "июль",
-    "август",
-    "сентябрь",
-    "октябрь",
-    "ноябрь",
-    "декабрь",
-];
+import { russianMonths } from '../../../helpers/constants';
 
 function Monitor({ currentMonth, changeMonth }) {
     

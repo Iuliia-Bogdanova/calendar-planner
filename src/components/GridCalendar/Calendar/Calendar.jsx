@@ -3,20 +3,7 @@ import moment from "moment";
 
 import st from "./styles.module.scss";
 
-const russianShortMonths = [
-    "янв",
-    "фев",
-    "мар",
-    "апр",
-    "мая",
-    "июн",
-    "июл",
-    "авг",
-    "сен",
-    "окт",
-    "ноя",
-    "дек",
-];
+import { russianShortMonths } from "../../../helpers/constants";
 
 const Calendar = ({ startDay }) => {
     const totalDays = 42;
