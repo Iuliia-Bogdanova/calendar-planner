@@ -4,6 +4,16 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 
+    margin-top: 104px;
+
+    @media (max-width: 1600px) {
+        margin-top: 90px;
+    }
+
+    @media (max-width: 1420px) {
+        margin-top: 70px;
+    }
+
     // border: 1px solid green;
 }
 

@@ -34,13 +34,13 @@ const Calendar = ({ startDay }) => {
                         className={st.event}
                         style={{ opacity: isPastEvent(dayItem) ? 0.5 : 1 }}
                     >
-                        {/* event1 */}
+                        event1
                     </p>
                     <p
                         className={st.event}
                         style={{ opacity: isPastEvent(dayItem) ? 0.5 : 1 }}
                     >
-                        {/* event2 */}
+                        event2
                     </p>
                 </div>
             ))}
