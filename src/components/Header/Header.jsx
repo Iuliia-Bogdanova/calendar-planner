@@ -1,12 +1,12 @@
-import React from 'react';
-import moment from 'moment';
+import React from "react";
+import moment from "moment";
 
-import Title from './Title/Title';
-import Monitor from './Monitor/Monitor';
+import Title from "./Title/Title";
+import Monitor from "./Monitor/Monitor";
 import InactiveUser from "./InactiveUser/InactiveUser";
 import ActiveUser from "./ActiveUser/ActiveUser";
 
-import st from './styles.module.scss';
+import st from "./styles.module.scss";
 
 const today = moment();
 
