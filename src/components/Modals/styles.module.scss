@@ -1,0 +1,19 @@
+@import '../../styles/vars.scss';
+@import '../../styles/base.scss';
+
+.modalWrapper {
+    width: 770px;
+    height: 510px;
+}
+
+.h4 {
+    color: $accent-color;
+    margin-top: 24px;
+    margin-bottom: 102px;
+}
+
+.decoration {
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+}

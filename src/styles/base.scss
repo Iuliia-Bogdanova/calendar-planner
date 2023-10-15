@@ -1,7 +1,6 @@
 @import 'vars.scss';
 @import 'fonts.scss';
 @import 'normalize.scss';
-// @import-normalize;
 
 * {
     margin: 0;
@@ -39,6 +38,8 @@ button {
     box-shadow: none;
     background-color: transparent;
     background: none;
+    border: none;
+    outline: none;
     cursor: pointer;
 }
 
@@ -52,11 +53,6 @@ button, button:focus, button:active {
     justify-content: center;
     align-items: center;
 
-}
-
-body {
-    // background-color: $grey-color;
-    // overflow: hidden;
 }
 
 .App {
@@ -76,4 +72,81 @@ body {
     padding: 30px 60px 53px;
 
     border: 1px solid green;
+}
+
+.h2 {
+    font-size: 64px;
+    line-height: 1.2;
+    letter-spacing: -2.56px;
+    
+}
+
+.h4 {
+    font-size: 18px;
+    letter-spacing: -0.36px;
+}
+
+.overlayWrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $overlay;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 800ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modalWrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 64px;
+    flex-shrink: 0;
+    padding: 40px 40px 80px 80px;
+    background-color: $bg-color;
+    font-family: $main-font;
+}
+
+.modalCloseBtn {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    transition: transform .3s ease;
+}
+
+.modalCloseBtn:hover {
+    transform: scale(1.1);
+    opacity: 1.1;
+}
+
+.button {
+    display: inline-block;
+    flex-basis: auto;
+    align-self: flex-start;
+    padding: 21px 32px;
+    border-radius: 12px;
+    background-color: $main-text-color;
+    color: $bg-color;
+    transition: transform .3s ease;
+}
+
+.button:hover {
+    transform: scale(0.99);
+    opacity: 0.9;
 }
