@@ -1,7 +1,7 @@
 import React from 'react'
 
 import st from "./styles.module.scss";
-import logo from "/logo.svg";
+import logo from "/icons/logo.svg";
 
 function SubHeader() {
     return (

@@ -1,8 +1,8 @@
 import React from 'react';
 
 import st from "./styles.module.scss";
-import avatarIcon from '/avatar.png';
-import addIcon from '/add.svg';
+import avatarIcon from '/icons/avatar.png';
+import addIcon from '/icons/add.svg';
 
 function ActiveUser() {
     return (

@@ -2,8 +2,8 @@ import React from 'react';
 import moment from 'moment';
 
 import st from "./styles.module.scss";
-import leftArrow from "/left-arrow.svg";
-import rightArrow from "/right-arrow.svg";
+import leftArrow from "/icons/left-arrow.svg";
+import rightArrow from "/icons/right-arrow.svg";
 
 import { russianMonths } from '../../../helpers/constants';
 
