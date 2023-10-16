@@ -4,6 +4,7 @@ import React from "react";
 
 import Calendar from "./Calendar/Calendar";
 import WeekDays from "./WeekDays/WeekDays";
+import PastEventModal from "../Modals/PastEventModal/PastEventModal";
 
 const GridCalendar = ({ startDay }) => {
     const totalDays = 42;
@@ -15,6 +16,8 @@ const GridCalendar = ({ startDay }) => {
             <WeekDays />
 
             <Calendar startDay={startDay} />
+
+            <PastEventModal />
         </div>
     );
 };
