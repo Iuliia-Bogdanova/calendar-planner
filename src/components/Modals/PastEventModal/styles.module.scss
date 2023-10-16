@@ -1,0 +1,16 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/base.scss';
+
+.modalWrapper {
+    width: 1075px;
+    height: 882px;
+    padding: 40px 40px 80px 64px;
+}
+
+.info {
+    text-align: center;
+    font-family: $secondary-font;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.28px;
+}

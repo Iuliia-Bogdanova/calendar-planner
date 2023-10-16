@@ -5,11 +5,13 @@ import st from "./styles.module.scss";
 
 import { russianShortMonths } from "../../../helpers/constants";
 
-const Calendar = ({ startDay }) => {
+const Calendar = ({ startDay, onCellClick }) => {
     const totalDays = 42;
     const day = startDay.clone().subtract(1, "day");
-    const daysArray = [...Array(totalDays)].map(() => day.add(1, "day").clone());
-    
+    const daysArray = [...Array(totalDays)].map(() =>
+        day.add(1, "day").clone()
+    );
+
     const isPastEvent = (eventDate) => {
         const currentDay = moment();
         return eventDate.isBefore(currentDay);
@@ -19,14 +21,15 @@ const Calendar = ({ startDay }) => {
         <div className={st.cellsWrapper}>
             {daysArray.map((dayItem) => (
                 <div className={st.cells} key={dayItem.format("DDMMYYY")}>
-                    <span style={{
+                    <span
+                        style={{
                             opacity: dayItem.isSame(moment(), "month")
                                 ? 1
                                 : 0.5,
                         }}
                     >
                         {dayItem.date() === 1
-                            ? `${dayItem.date()} ${russianShortMonths[dayItem.month()]}${dayItem.month() === 4 ? '' : '.'}`
+                            ? `${dayItem.date()} ${russianShortMonths[dayItem.month()]}${dayItem.month() === 4 ? "" : "."}`
                             : dayItem.format("D")}
                     </span>
                     <p
