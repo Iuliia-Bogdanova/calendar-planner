@@ -19,8 +19,7 @@ const Calendar = ({ startDay }) => {
         <div className={st.cellsWrapper}>
             {daysArray.map((dayItem) => (
                 <div className={st.cells} key={dayItem.format("DDMMYYY")}>
-                    <span
-                        style={{
+                    <span style={{
                             opacity: dayItem.isSame(moment(), "month")
                                 ? 1
                                 : 0.5,

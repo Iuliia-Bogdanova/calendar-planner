@@ -5,7 +5,7 @@ import "./styles/base.scss";
 
 import Header from "./components/Header/Header";
 import GridCalendar from "./components/GridCalendar/GridCalendar";
-import ErrorModal from "./components/Modals/ErrorModal";
+import ErrorModal from "./components/Modals/ErrorModal/ErrorModal";
 
 function App() {
     moment.updateLocale("ru", { week: { dow: 1 } });
@@ -37,7 +37,7 @@ function App() {
                         .day(1)}
                 />
                 <ErrorModal isError={isError} setIsError={setIsError} />
-                <button onClick={handleError}>Вызвать ошибку</button>
+                <button className='button' onClick={handleError}>Вызвать ошибку</button>
             </div>
         </div>
     );
