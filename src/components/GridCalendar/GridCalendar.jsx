@@ -4,7 +4,7 @@ import React, { useState} from "react";
 
 import Calendar from "./Calendar/Calendar";
 import WeekDays from "./WeekDays/WeekDays";
-import PastEventModal from "../Modals/PastEventModal/PastEventModal";
+import EventInactiveUserModal from "../Modals/EventInactiveUserModal/EventInactiveUserModal";
 
 const GridCalendar = ({ startDay }) => {
     const totalDays = 42;
@@ -26,10 +26,8 @@ const GridCalendar = ({ startDay }) => {
 
             <Calendar startDay={startDay} onCellClick={handleOpenModal} />
 
-            <PastEventModal isOpen={isModalOpen} onRequestClose={handleCloseModal}
+            <EventInactiveUserModal isOpen={isModalOpen} onRequestClose={handleCloseModal}
             />
-
-            
 
         </div>
     );

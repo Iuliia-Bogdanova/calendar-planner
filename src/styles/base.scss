@@ -119,11 +119,17 @@ button, button:focus, button:active {
 .modalCloseBtn {
     width: 40px;
     height: 40px;
+    background: $bg-color;
     margin-left: auto;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
     transition: transform .3s ease;
 }
 
 .modalCloseBtn:hover {
+    
     transform: scale(1.1);
     opacity: 1.1;
 }
