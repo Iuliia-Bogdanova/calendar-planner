@@ -3,6 +3,7 @@ import React from 'react';
 import st from "./styles.module.scss";
 import avatarIcon from '/icons/avatar.png';
 import addIcon from '/icons/add.svg';
+import CreateEventModal from '../../Modals/CreateEventModal/CreateEventModal';
 
 function ActiveUser() {
     return (
@@ -19,6 +20,7 @@ function ActiveUser() {
                     />
                 </div>
             </div>
+            <CreateEventModal />
         </div>
     );
 }

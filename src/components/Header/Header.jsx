@@ -24,8 +24,8 @@ function Header({ currentMonth, changeMonth }) {
                 />
             </li>
             <li>
-                {/* <InactiveUser /> */}
-                <ActiveUser />
+                <InactiveUser />
+                {/* <ActiveUser /> */}
                 {/* {isAuthenticated ? <ActiveUser /> : <InactiveUser />} */}
             </li>
         </ul>
