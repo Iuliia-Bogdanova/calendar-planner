@@ -60,7 +60,8 @@ const Calendar = ({ startDay }) => {
             <Modal
                 isOpen={selectedDay !== null}
                 onRequestClose={() => setSelectedDay(null)}
-                // вложенные окна всегда с двойным оверлеем, решается через рендеринг портала ReactDOM.createPortal
+                ariaHideApp={false}
+                // в react-modal вложенные окна всегда с двойным оверлеем, решается через рендеринг портала ReactDOM.createPortal
             >
                 <EventInactiveUserModal
                     isOpen={selectedDay !== null}
