@@ -6,10 +6,9 @@ import close from '/icons/close.svg';
 import pigeon from '/img/pigeon.png';
 
 const ErrorModal = ({ isError, setIsError }) => {
-    console.log(isError);
+    
     const closeModal = () => {
         setIsError(false);
-        console.log(isError);
     };
 
     const reloadPage = () => {

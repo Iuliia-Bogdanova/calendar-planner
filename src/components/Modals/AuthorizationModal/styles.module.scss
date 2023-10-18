@@ -1,0 +1,51 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/base.scss';
+
+.modalWrapper {
+    width: 600px;
+    height: 510px;
+    flex-shrink: 0;
+    padding: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 87px;
+    margin-right: 87px;
+    margin-bottom: 93px;
+    gap: 48px;
+}
+
+.mailForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    padding: 10px 16px 9px 16px;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid $grey-color;
+    outline: none;
+    cursor: pointer;
+}
+
+.label {
+    font-family: $secondary-font;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+}
+
+.inputMail {
+    outline: none;
+    border: none;
+    color: $system-color;
+}
+
+.button {
+    width: 100%;
+    align-self: center;
+}
