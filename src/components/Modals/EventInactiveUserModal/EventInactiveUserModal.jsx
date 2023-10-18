@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import ReactDOM from "react-dom";
 import Modal from "react-modal";
 
 import st from "./styles.module.scss";
@@ -8,6 +9,7 @@ import leftArrow from "/icons/left-arrow.svg";
 import rightArrow from "/icons/right-arrow.svg";
 
 function EventInactiveUserModal({ isOpen, onRequestClose }) {
+    console.log("EventInactiveUserModal function called");
     return (
         <Modal
             isOpen={isOpen}

@@ -24,7 +24,7 @@ const GridCalendar = ({ startDay }) => {
         <div>
             <WeekDays />
 
-            <Calendar startDay={startDay} onCellClick={handleOpenModal} />
+            <Calendar startDay={startDay} />
 
             <EventInactiveUserModal isOpen={isModalOpen} onRequestClose={handleCloseModal}
             />
