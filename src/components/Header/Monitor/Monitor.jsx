@@ -9,12 +9,12 @@ import { russianMonths } from '../../../helpers/constants';
 
 function Monitor({ currentMonth, changeMonth }) {
     
-    const today = moment();
+    const monthDates = moment();
     const monthName = russianMonths[currentMonth.month()];
     return (
         <div className={st.monitor}>
             <p className={st.month}>
-                {currentMonth.year() === today.year()
+                {currentMonth.year() === monthDates.year()
                     ? monthName
                     : `${monthName} ${currentMonth.year()}`}
             </p>

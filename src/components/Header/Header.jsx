@@ -8,7 +8,7 @@ import ActiveUser from "./ActiveUser/ActiveUser";
 
 import st from "./styles.module.scss";
 
-const today = moment();
+const monthDates = moment();
 
 function Header({ currentMonth, changeMonth }) {
     return (

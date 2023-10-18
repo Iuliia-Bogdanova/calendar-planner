@@ -9,8 +9,8 @@ import ErrorModal from "./components/Modals/ErrorModal/ErrorModal";
 
 function App() {
     moment.updateLocale("ru", { week: { dow: 1 } });
-    const today = moment();
-    const startDay = today.startOf("month").startOf("week").day(1);
+    const monthDates = moment();
+    const startDay = monthDates.startOf("month").startOf("week").day(1);
 
     const [currentMonth, setCurrentMonth] = useState(moment());
     const [isError, setIsError] = useState(false);

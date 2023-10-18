@@ -10,7 +10,7 @@ const GridCalendar = ({ startDay }) => {
     const totalDays = 42;
     const day = startDay.clone().subtract(1, "day");
     const daysArray = [...Array(42)].map(() => day.add(1, "day").clone());
-    const [isModalOpen, setIsModalOpen] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleOpenModal = () => {
         setIsModalOpen(true);
