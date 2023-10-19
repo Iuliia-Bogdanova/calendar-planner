@@ -21,20 +21,23 @@
 
 .mailForm {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     height: 60px;
     padding: 10px 16px 9px 16px;
-    gap: 8px;
     align-self: stretch;
     border-radius: 12px;
     border: 1px solid $grey-color;
     outline: none;
     cursor: pointer;
+    font-family: $secondary-font;
+}
+
+.labelInput {
+    display: flex;
+    flex-direction: column;
 }
 
 .label {
-    font-family: $secondary-font;
     font-size: 14px;
     letter-spacing: -0.28px;
     color: $grey-color;
@@ -43,7 +46,19 @@
 .inputMail {
     outline: none;
     border: none;
-    color: $system-color;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.36px;
+    color: $main-text-color;
+}
+
+.inputMail:focus {
+    caret-color: $system-color;
+}
+
+.modalCloseBtnSmall {
+    width: 32px;
+    height: 32px;
 }
 
 .button {
