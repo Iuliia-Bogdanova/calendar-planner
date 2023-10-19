@@ -3,7 +3,7 @@ import Modal from "react-modal";
 
 
 import st from "./styles.module.scss";
-import AuthorizationModal from '../../Modals/AuthorizationModal/AuthorizationModal';
+import RegistrationModal from '../../Modals/RegistrationModal/RegistrationModal';
 
 function InactiveUser() {
 
@@ -23,7 +23,7 @@ function InactiveUser() {
                     Войти
                 </button>
             </div>
-            <AuthorizationModal
+            <RegistrationModal
                 isOpen={isModalOpen}
                 onRequestClose={closeModal}
             />

@@ -4,7 +4,7 @@ import Modal from "react-modal";
 import st from "./styles.module.scss";
 import close from "/icons/close.svg";
 
-function AuthorizationModal({ isOpen, onRequestClose }) {
+function RegistrationModal({ isOpen, onRequestClose }) {
     const [email, setEmail] = useState("");
     const [showClear, setShowClear] = useState(false);
 
@@ -32,7 +32,7 @@ function AuthorizationModal({ isOpen, onRequestClose }) {
         <Modal
             isOpen={isOpen}
             onRequestClose={onRequestClose}
-            contentLabel="User Autorization Modal"
+            contentLabel="User Registration Modal"
             ariaHideApp={false}
             closeTimeoutMS={800}
             overlayClassName={st.overlayWrapper}
@@ -73,4 +73,4 @@ function AuthorizationModal({ isOpen, onRequestClose }) {
     );
 }
 
-export default AuthorizationModal;
+export default RegistrationModal;
