@@ -1,0 +1,67 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/base.scss';
+
+.modalWrapper {
+    width: 600px;
+    height: 510px;
+    flex-shrink: 0;
+    padding: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 87px;
+    margin-right: 87px;
+    margin-bottom: 93px;
+    gap: 48px;
+}
+
+.mailForm {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 10px 16px 9px 16px;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid $grey-color;
+    outline: none;
+    cursor: pointer;
+    font-family: $secondary-font;
+}
+
+.labelInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    color: $grey-color;
+}
+
+.inputMail {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.36px;
+    color: $main-text-color;
+}
+
+.inputMail:focus {
+    caret-color: $system-color;
+}
+
+.modalCloseBtnSmall {
+    width: 32px;
+    height: 32px;
+}
+
+.button {
+    width: 100%;
+    align-self: center;
+}

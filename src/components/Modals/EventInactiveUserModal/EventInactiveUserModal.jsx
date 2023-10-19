@@ -9,7 +9,6 @@ import leftArrow from "/icons/left-arrow.svg";
 import rightArrow from "/icons/right-arrow.svg";
 
 function EventInactiveUserModal({ isOpen, onRequestClose }) {
-    console.log("EventInactiveUserModal function called");
     return (
         <Modal
             isOpen={isOpen}

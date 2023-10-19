@@ -7,8 +7,6 @@ import Header from "./components/Header/Header";
 import GridCalendar from "./components/GridCalendar/GridCalendar";
 import ErrorModal from "./components/Modals/ErrorModal/ErrorModal";
 
-// const url = "http://localhost:3000/";
-
 function App() {
     moment.updateLocale("ru", { week: { dow: 1 } });
     const monthDates = moment();
@@ -26,24 +24,6 @@ function App() {
     const handleError = () => {
         setIsError(true);
     }; 
-
-    // const [events, setEvents] = useState([]);
-    // const startDateQuery = startDay.clone().format('X');
-    // const endDateQuery = startDay.clone().add(42, 'days').format("X");
-
-    // useEffect(() => {
-    //     fetch(
-    //         // `${url}/registration/`
-    //         "http://localhost:3000/registration/"
-    //         // "http://localhost:3000/events/"
-    //         // `${url}/events?date_gte=${startDateQuery}&date_lte=${endDateQuery}`
-    //     )
-    //         .then((res) => res.json())
-    //         .then((res) => {
-    //             console.log("Response", res);
-    //             setEvents(res);
-    //         });
-    // }, []);
 
     return (
         <div className="App">

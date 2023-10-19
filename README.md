@@ -5,6 +5,7 @@
 - moment 
 - sass
 - json-server
+- axios
 
 ### Запуск сервера
 

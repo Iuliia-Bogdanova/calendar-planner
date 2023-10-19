@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Modal from "react-modal";
 
-
 import st from "./styles.module.scss";
-import RegistrationModal from '../../Modals/RegistrationModal/RegistrationModal';
+// import AutorizationModal from "../../Modals/AutorizationModal/AutorizationModal";
+import RegistrationModal from "../../Modals/RegistrationModal/RegistrationModal";
 
 function InactiveUser() {
-
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => {
@@ -23,6 +22,11 @@ function InactiveUser() {
                     Войти
                 </button>
             </div>
+            {/* <AutorizationModal
+                isOpen={isModalOpen}
+                onRequestClose={closeModal}
+            /> */}
+
             <RegistrationModal
                 isOpen={isModalOpen}
                 onRequestClose={closeModal}

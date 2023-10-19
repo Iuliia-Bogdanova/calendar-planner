@@ -2,26 +2,48 @@
 @import '../../../styles/base.scss';
 
 .modalWrapper {
-    width: 600px;
-    height: 510px;
+    width: 710px;
+    height: 618px;
     flex-shrink: 0;
-    padding: 40px;
+    justify-content: flex-start;
+    padding: 80px 95px 64px;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 87px;
-    margin-right: 87px;
-    margin-bottom: 93px;
-    gap: 48px;
+.modalCloseBtn {
+    margin-right: -55px;
+    margin-top: -40px;
 }
 
-.mailForm {
+.info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+    padding: 8px 12px;
+    gap: 8px;
+    border-radius: 12px;
+    background-color: $element-color;
+    font-family: $primary-font;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.28px;
+}
+
+.registrationForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 24px 95px 0;
+    gap: 32px;
+}
+
+.labelInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
     height: 60px;
     padding: 10px 16px 9px 16px;
     align-self: stretch;
@@ -30,38 +52,40 @@
     outline: none;
     cursor: pointer;
     font-family: $secondary-font;
-}
-
-.labelInput {
-    display: flex;
-    flex-direction: column;
-}
-
-.label {
-    font-size: 14px;
-    letter-spacing: -0.28px;
     color: $grey-color;
 }
 
-.inputMail {
+.labelUser {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+}
+
+.labelPassword,
+.labelPasswordConfirm {
+    font-size: 20px;
+}
+
+.inputUser,
+.inputPassword,
+.inputPasswordConfirm {
     outline: none;
     border: none;
-    font-size: 18px;
-    line-height: 1.2;
-    letter-spacing: -0.36px;
-    color: $main-text-color;
 }
 
-.inputMail:focus {
+.inputUser:focus {
     caret-color: $system-color;
+    width: 1px;
+    height: 16px;
 }
 
-.modalCloseBtnSmall {
-    width: 32px;
-    height: 32px;
+.inputPassword,
+.inputPasswordConfirm {
+    outline: none;
+    border: none;
 }
 
 .button {
-    width: 100%;
-    align-self: center;
+    align-self: stretch;
+    background-color: $element-color;
+    color: $grey-color;
 }
